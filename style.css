@@ -27,3 +27,12 @@
         transform: scaleY(1)
     }
 }
+
+
+.headerText{
+    transform: translateY(-200px);
+    transition: all 2s;
+}
+.headerTextAction{
+    transform: translateY(20px);
+}

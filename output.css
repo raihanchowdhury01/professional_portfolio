@@ -640,6 +640,26 @@ video {
   margin-inline-start: ;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[30\] {
+  margin-bottom: 30;
+}
+
+.mb-\[30\%\] {
+  margin-bottom: 30%;
+}
+
+.mb-\[100\%\] {
+  margin-bottom: 100%;
+}
+
+.mb-\[1000\%\] {
+  margin-bottom: 1000%;
+}
+
 .block {
   display: block;
 }
