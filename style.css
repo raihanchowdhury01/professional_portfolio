@@ -1,5 +1,7 @@
 
-
+.themeColor{
+    background-color: #353434;
+}
 
 .active{
     display: none !important;
@@ -29,10 +31,20 @@
 }
 
 
-.headerText{
-    transform: translateY(-200px);
-    transition: all 2s;
+/* navbar sticky design */
+.sticky{
+    position: fixed;
+    box-shadow: 0px 0px 10px 0px #000000;
+    background-image: linear-gradient(to right, #370838, #3c0730);
+    width: 100%;
+    transition: 0.5s;
+    top: 0;
+    z-index: 1;
 }
-.headerTextAction{
-    transform: translateY(20px);
+
+.stick{
+    position: absolute;
+    top: 10vh;
 }
+
+/* about intersecting observer design */
