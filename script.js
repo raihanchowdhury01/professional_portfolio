@@ -41,7 +41,6 @@ const project = document.getElementById("project");
 let counter = 0;
 let projects = 0;
 const observer = new IntersectionObserver((items) => {
-    console.log(items);
     items.forEach(item => {
         if (item.isIntersecting) {
             content.classList.add("aboutAnim");
@@ -71,6 +70,73 @@ const observer = new IntersectionObserver((items) => {
 
 observer.observe(content);
 
-// about section counter design
+// skills section design
+const skills = document.querySelector(".add");
+const html = document.querySelector(".html5");
+let htmlCounter = 0;
+const css = document.getElementById("css");
+let cssCounter = 0;
+const js = document.getElementById("js");
+let jsCounter = 0;
+const py = document.getElementById("py");
+let pyCounter = 0;
+const sql = document.getElementById("sql");
+let sqlCounter = 0;
+const observeSkill = new IntersectionObserver((items)=>{
+items.forEach(item =>{
+    if(item.isIntersecting){
+        skills.classList.add("skill");
+         // html
+         setInterval(() => {
+            if (htmlCounter === 80) {
+                clearInterval();
+            } else {
+                htmlCounter++;
+                html.innerText = htmlCounter;
+            }
+        }, 20);
+         // css
+         setInterval(() => {
+            if (cssCounter === 80) {
+                clearInterval();
+            } else {
+                cssCounter++;
+                css.innerText = cssCounter;
+            }
+        }, 20);
+         // js
+         setInterval(() => {
+            if (jsCounter === 60) {
+                clearInterval();
+            } else {
+                jsCounter++;
+                js.innerText = jsCounter;
+            }
+        }, 20);
+         // py
+         setInterval(() => {
+            if (pyCounter === 20) {
+                clearInterval();
+            } else {
+                pyCounter++;
+                py.innerText = pyCounter;
+            }
+        }, 50);
+         // sql
+         setInterval(() => {
+            if (sqlCounter === 50) {
+                clearInterval();
+            } else {
+                sqlCounter++;
+                sql.innerText = sqlCounter;
+            }
+        }, 40);
+    }else{
+        skills.classList.remove("skill");
+    }
+})
+}, {
+    threshold: 0.1
+})
 
-
+observeSkill.observe(skills);

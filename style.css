@@ -15,7 +15,7 @@
     display: block !important;
     animation: drop 0.5s ease-in-out forwards;
     transform-origin: top center;
-    z-index: 1;
+    z-index: 999;
 }
 
 @keyframes drop {
@@ -39,7 +39,7 @@
     width: 100%;
     transition: 0.5s;
     top: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 .stick{
@@ -47,4 +47,88 @@
     top: 10vh;
 }
 
-/* about intersecting observer design */
+/* skill section design */
+.skill>li{
+    position: relative;
+}
+.skill>li>span{
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    z-index: 1;
+}
+.skill>li::before{
+    content: "";
+    width: 100%;
+    height: 2vh;
+    background-color: #373737;
+    position: absolute;
+    top: 30px;
+    border-radius: 100px;
+}
+.skill>li::after{
+    content: "";
+    width: 0px;
+    height: 2vh;
+    position: absolute;
+    top: 30px;
+    border-radius: 100px;
+    background-color: skyblue;
+    left: 0;
+    animation: 2s forwards;
+}
+.skill>li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.skill>li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skill>li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skill>li.python::after{
+    animation-name: python;
+}
+@keyframes python {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 20%;
+    }
+}
+.skill>li.sql::after{
+    animation-name: sql;
+}
+@keyframes sql {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
