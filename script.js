@@ -88,7 +88,7 @@ items.forEach(item =>{
         skills.classList.add("skill");
          // html
          setInterval(() => {
-            if (htmlCounter === 80) {
+            if (htmlCounter === 90) {
                 clearInterval();
             } else {
                 htmlCounter++;
@@ -115,7 +115,7 @@ items.forEach(item =>{
         }, 20);
          // py
          setInterval(() => {
-            if (pyCounter === 20) {
+            if (pyCounter === 60) {
                 clearInterval();
             } else {
                 pyCounter++;
