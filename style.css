@@ -154,7 +154,7 @@
     .skill>div>li>span{
         position: absolute;
         top: 23px;
-        left: 380px;
+        left: 200px;
         z-index: 1;
     }
 }
