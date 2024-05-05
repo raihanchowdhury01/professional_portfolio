@@ -20,7 +20,7 @@
     <body class="bg-dark pb-5">
 
             <!-- navigation bar design -->
-            <div class="navBar flex justify-between px-3 items-center py-3">
+            <div class="navBar md:flex justify-between px-3 items-center py-3">
                 <div class="px-3 flex justify-between items-center" id="html5">
                     <!-- logo design -->
                     <div>
@@ -29,7 +29,7 @@
                     <!-- three dot bar design -->
                     <div class="md:hidden">
                         <button><i class="fa-solid fa-bars bars  text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif" id="bars"></i></button>
-                        <button><i class="fa-solid fa-xmark xMark text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif absolute top-4 end-4 right-6 d-none" id="xMark"></i></button>
+                        <button><i class="fa-solid fa-xmark xMark text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif absolute top-4 end-4 right-10 d-none" id="xMark"></i></button>
                     </div>
                 </div>
                 <!-- sm < md device menubar design -->
@@ -51,19 +51,21 @@
                 </div>
 
                 <!-- lg device menubar design -->
-                <div class="flex justify-between items-center space-x-20">
-                    <div>
-                        <ul class="text-gray-300 text-uppercase text-2xl flex justify-between space-x-10">
-                            <li><a href="#html5">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#skill">Skill</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button
-                            class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl text-xl "><a href="#contact">Contact</a></button>
+                <div class="d-none d-md-block">
+                    <div class="flex justify-between items-center space-x-5">
+                        <div>
+                            <ul class="text-gray-300 text-2xl flex justify-between space-x-10">
+                                <li><a href="#html5">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#skill">Skill</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button
+                                class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl text-xl "><a href="#contact">Contact</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,7 +78,7 @@
                         <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif text-center mt-5">Hi
                             I'm Md Raihan! I'm a Frontend Developer</p>
                     </div>
-                    <div class="space-x-10 items-center mt-5 d-none d-md-block px-3 ms-[30%]">
+                    <div class="space-x-5 items-center mt-5 d-none d-md-block px-3 md:ms-[10%]">
                         <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href>Hire Me! <i class="fa-solid fa-message  text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
                         <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href download>Download CV <i class="fa-solid fa-download  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
                     </div>
@@ -107,8 +109,8 @@
                         <span id="project">0</span>+ <p>Project completed</p>
                     </div>
                 </div>
-                <div class="text-gray-300 items-center mt-5 md:ms-[10%]">
-                    <button class=" btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl mx-[20%] sm:mx-[33%] md:w-[20%]"><i class="fa-brands fa-github  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white me-2"></i> Browse my github</button>
+                <div class="text-gray-300 mt-5">
+                    <button class=" btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl mx-[20%] sm:mx-[33%] md:ms-[40%]"><i class="fa-brands fa-github  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white me-2"></i> Browse my github</button>
                 </div>
             </div>
 
@@ -117,7 +119,7 @@
             <div class="mt-20" id="service">
                 <div class="space-y-2 my-10">
                     <p class="text-3xl text-gray-300 text-center">Services</p>
-                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[40%] sm:w-[20%] md:w-[10%] mx-auto"/>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[40%] sm:w-[20%] md:w-[20%] mx-auto"/>
                 </div>
                 <div class="mx-auto grid md:grid-cols-2 lg:grid-cols-3 space-y-20 md:space-y-0 md:gap-y-20">
                     <div class="text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl space-y-5">
@@ -157,7 +159,7 @@
                 <div>
                     <div class="space-y-2 my-10">
                         <p class="text-3xl text-gray-300 text-center">My Portfolio</p>
-                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[55%] sm:w-[35%] md:w-[15%] mx-auto"/>
+                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[55%] sm:w-[35%] md:w-[20%] mx-auto"/>
                     </div>
                     <p class="text-center text-2xl text-gray-400">Just click on image for visit that site</p>
                 </div>
@@ -187,7 +189,7 @@
                 </div>
                 <div class="my-5 d-none d-sm-block space-y-5">
                     <p class="text-3xl text-gray-300 text-center">Framework Skills</p>
-                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full sm:w-[40%] md:w-[15%] mx-auto"/>
+                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full sm:w-[40%] md:w-[20%] mx-auto"/>
                 </div>
                 <div class="">
                     <div class="w-[60%] mx-auto">
@@ -216,7 +218,7 @@
             <div class="bg-[#161216] py-2 mt-40" id="contact">
                 <div class="space-y-2 my-10">
                     <p class="text-3xl text-gray-300 text-center">Contact With me!</p>
-                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[80%] sm:w-[40%] md:w-[20%] mx-auto"/>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[80%] sm:w-[40%] md:w-[25%] mx-auto"/>
                 </div>
                 <div class="md:flex justify-around items-center">
                     <div class="px-3">
