@@ -19,261 +19,292 @@
     </head>
     <body class="bg-dark pb-5">
 
-        <!-- navigation bar design -->
-        <div class="navBar">
-            <div class="px-3 flex justify-between items-center py-3">
-                <!-- logo design -->
-                <div>
-                    <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif">Developer</p>
-                </div>
-                <!-- three dot bar design -->
-                <div>
-                    <button><i class="fa-solid fa-bars bars  text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif"
-                            id="bars"></i></button>
-                    <button><i class="fa-solid fa-xmark xMark text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif absolute top-4 end-4 right-6 d-none"
-                            id="xMark"></i></button>
-                </div>
-            </div>
-            <div
-                class="menuBar absolute top-20 space-y-10 bg-indigo-400 py-3 shadow-xl text-center d-none w-full">
-                <div class>
-                    <ul
-                        class="text-gray-300 text-uppercase space-y-10 text-2xl">
-                        <li><a href>Home</a></li>
-                        <li><a href>About</a></li>
-                        <li><a href>Service</a></li>
-                        <li><a href>Portfolio</a></li>
-                        <li><a href>Skill</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <button
-                        class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl text-xl "><a
-                            href>Contact</a></button>
-                </div>
-            </div>
-        </div>
-
-        <!-- header section design -->
-        <div class="px-3">
-            <!-- header text design -->
-            <div class="headerText">
-                <p
-                    class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif text-center mt-5">Hi
-                    I'm Md Raihan! I'm a Frontend Developer</p>
-            </div>
-            <!-- image section design -->
-            <div class="headerImg mt-5">
-                <img
-                    src="Image/WhatsApp Image 2024-02-14 at 09.45.38_820241a5.jpg"
-                    alt="there have my photo"
-                    class="w-50 mx-auto rounded-full ring-4 ring-offset-8 border-blue-600 border-5">
-            </div>
-            <!-- contact button design -->
-            <div class="flex justify-center gap-5 items-center mt-5">
-                <button
-                    class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a
-                        href>Hire Me! <i
-                            class="fa-solid fa-message  text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
-                <button
-                    class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a
-                        href download>Download CV <i
-                            class="fa-solid fa-download  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
-            </div>
-        </div>
-
-        <!-- about section design -->
-        <div class="mt-40 px-3">
-            <div class="space-y-2">
-                <p class="text-3xl text-gray-300 text-center">About Me</p>
-            <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[50%] mx-auto"/>
-            </div>
-            <div class="about text-gray-300 text-2xl mt-5 grid grid-cols-2 gap-5 text-center px-3">
-                <div>
-                    <span id="experience">0</span>+ <p>Years of Experience</p>
-                </div>
-                <div>
-                    <span id="project">0</span>+ <p>Project completed</p>
-                </div>
-            </div>
-            <div class="text-gray-300 items-center mt-5">
-                <button
-                    class=" btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl mx-[20%]"><i
-                        class="fa-brands fa-github  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white me-2"></i>
-                    Browse my github</button>
-            </div>
-        </div>
-
-        <!-- Service section design -->
-        
-        <div class="mt-20">
-            <div class="space-y-2 my-10">
-                <p class="text-3xl text-gray-300 text-center">Services</p>
-            <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[40%] mx-auto"/>
-            </div>
-            <div class="space-y-20">
-                <div class="space-y-10 text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl">
-                    <p class="text-sky-600 text-5xl">{ }</p>
-                    <div class="text-gray-300 space-y-3">
-                        <h1 class="text-2xl font-serif">UI/UX Design</h1>
-                        <p>I'm a Frontend Designer and Developer</p>
+            <!-- navigation bar design -->
+            <div class="navBar flex justify-between px-3 items-center py-3">
+                <div class="px-3 flex justify-between items-center" id="html5">
+                    <!-- logo design -->
+                    <div>
+                        <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif">Developer</p>
+                    </div>
+                    <!-- three dot bar design -->
+                    <div class="md:hidden">
+                        <button><i class="fa-solid fa-bars bars  text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif" id="bars"></i></button>
+                        <button><i class="fa-solid fa-xmark xMark text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif absolute top-4 end-4 right-6 d-none" id="xMark"></i></button>
                     </div>
                 </div>
-                <div class="space-y-10 text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl">
-                    <p class="text-sky-600 text-5xl"><i class="fa-solid fa-palette"></i></p>
-                    <div class="text-gray-300 space-y-3">
-                        <h1 class="text-2xl font-serif">Responsive</h1>
-                        <p>I make the website responsive design for all devices</p>
+                <!-- sm < md device menubar design -->
+                <div class="menuBar absolute top-20 space-y-10 bg-indigo-400 py-3 shadow-xl text-center d-none w-full">
+                    <div>
+                        <ul class="text-gray-300 text-uppercase space-y-10 text-2xl">
+                            <li><a href="#html5">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button
+                            class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl text-xl "><a
+                                href="#contact">Contact</a></button>
                     </div>
                 </div>
-                <div class="space-y-10 text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl">
-                    <p class="text-sky-600 text-5xl"><i class="fa-solid fa-hand-holding-droplet"></i></p>
-                    <div class="text-gray-300 space-y-3">
-                        <h1 class="text-2xl font-serif">Python</h1>
-                        <p>I'm working Back-end development with python and MySQL. If you need this service You may contact with me</p>
+
+                <!-- lg device menubar design -->
+                <div class="flex justify-between items-center space-x-20">
+                    <div>
+                        <ul class="text-gray-300 text-uppercase text-2xl flex justify-between space-x-10">
+                            <li><a href="#html5">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button
+                            class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl text-xl "><a href="#contact">Contact</a></button>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- header section design -->
+            <div class="px-3 grid md:grid-cols-2 items-center">
+                <!-- header text design -->
+                <div >
+                    <div class="headerText">
+                        <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif text-center mt-5">Hi
+                            I'm Md Raihan! I'm a Frontend Developer</p>
+                    </div>
+                    <div class="space-x-10 items-center mt-5 d-none d-md-block px-3 ms-[30%]">
+                        <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href>Hire Me! <i class="fa-solid fa-message  text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
+                        <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href download>Download CV <i class="fa-solid fa-download  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
+                    </div>
+                </div>
+                <!-- image section design -->
+                <div class="headerImg mt-5">
+                    <img src="Image/WhatsApp Image 2024-02-14 at 09.45.38_820241a5.jpg" alt="there have my photo" class="w-50 mx-auto rounded-full ring-4 ring-offset-8 border-blue-600 border-5 md:hidden">
+                    <img src="Image/bg.png" alt="there have my photo" class="w-50 mx-auto d-none d-md-block">
+                </div>
+                <!-- contact button design -->
+                <div class="flex justify-center gap-5 items-center mt-5 md:hidden">
+                    <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href>Hire Me! <i class="fa-solid fa-message  text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
+                    <button class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl"><a href download>Download CV <i class="fa-solid fa-download  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white"></i></a></button>
+                </div>
+            </div>
 
-        <!-- Portfolio section design -->
-        <div class="mt-40">
-            <div>
+            <!-- about section design -->
+            <div class="mt-40 px-3" id="about">
+                <div class="space-y-2">
+                    <p class="text-3xl text-gray-300 text-center">About Me</p>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[50%] sm:w-[30%] md:w-[20%] lg:w-[10%] mx-auto"/>
+                </div>
+                <div class="about text-gray-300 text-2xl mt-5 grid grid-cols-2 gap-5 text-center px-3">
+                    <div>
+                        <span id="experience">0</span>+ <p>Years of Experience</p>
+                    </div>
+                    <div>
+                        <span id="project">0</span>+ <p>Project completed</p>
+                    </div>
+                </div>
+                <div class="text-gray-300 items-center mt-5 md:ms-[10%]">
+                    <button class=" btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl mx-[20%] sm:mx-[33%] md:w-[20%]"><i class="fa-brands fa-github  text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover text-white me-2"></i> Browse my github</button>
+                </div>
+            </div>
+
+            <!-- Service section design -->
+            
+            <div class="mt-20" id="service">
                 <div class="space-y-2 my-10">
-                    <p class="text-3xl text-gray-300 text-center">My Portfolio</p>
-                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[55%] mx-auto"/>
+                    <p class="text-3xl text-gray-300 text-center">Services</p>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[40%] sm:w-[20%] md:w-[10%] mx-auto"/>
                 </div>
-                <p class="text-center text-2xl text-gray-400">Just click on image for visit that site</p>
-            </div>
-            <div class="mx-10">
-                <div class="space-y-14 grid sm:grid-cols-3 sm:gap-8">
-                    <div class="h-[50vh] mt-14 shadow transform hover:scale-105 duration-500 hover:shadow">
-                        <a href="https://cosmic-starship-ae9d0e.netlify.app/" target="_blank"><img src="Image/quize site.png" alt=""></a>
+                <div class="mx-auto grid md:grid-cols-2 lg:grid-cols-3 space-y-20 md:space-y-0 md:gap-y-20">
+                    <div class="text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl space-y-5">
+                        <p class="text-sky-600 text-5xl"><i class="fa-solid fa-window-restore"></i></p>
+                        <div class="text-gray-300 space-y-3">
+                            <h1 class="text-2xl font-serif">Web Design</h1>
+                            <p>I'm a Frontend Designer</p>
+                        </div>
                     </div>
-                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
-                        <a href="https://fantastic-creponne-61c4cf.netlify.app/" target="_blank"><img src="Image/tempareture.png" alt=""></a>
+                    <div class="text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl space-y-5">
+                        <p class="text-sky-600 text-5xl">{ }</p>
+                        <div class="text-gray-300 space-y-3">
+                            <h1 class="text-2xl font-serif">UI/UX Design</h1>
+                            <p>I'm a UI/UX Designer</p>
+                        </div>
                     </div>
-                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
-                        <a href="https://raihanchowdhury01.github.io/assainment-5/" target="_blank"><img src="Image/calculate.png" alt=""></a>
+                    <div class="text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl space-y-5">
+                        <p class="text-sky-600 text-5xl"><i class="fa-solid fa-palette"></i></p>
+                        <div class="text-gray-300 space-y-3">
+                            <h1 class="text-2xl font-serif">Responsive</h1>
+                            <p>I make the website responsive design for all devices</p>
+                        </div>
                     </div>
-                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
-                        <a href="https://iridescent-valkyrie-ff4fc7.netlify.app/" target="_blank"><img src="Image/e-commerce.png" alt=""></a>
+                    <div class=" text-center shadow-xl shadow-gray-700 w-75 mx-auto p-5 scale-105 hover:shadow-xl duration-500 hover:shadow-blue-300 rounded-xl space-y-5">
+                        <p class="text-sky-600 text-5xl"><i class="fa-solid fa-hand-holding-droplet"></i></p>
+                        <div class="text-gray-300 space-y-3">
+                            <h1 class="text-2xl font-serif">Python</h1>
+                            <p>I'm starting work Back-end development with python and MySQL. If you need this service You may contact with me. This service will be available ASAP.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Skill section design -->
-        <div class="mt-20">
-            <div class="space-y-2 my-10">
-                <p class="text-3xl text-gray-300 text-center">Skill levels</p>
-            <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[50%] mx-auto"/>
-            </div>
-            <div class="">
-                <div class="w-[60%] mx-auto">
-                    <ul class="add text-white space-y-8">
-                        <li class="html">HTML <span><span class="html5">90</span><span>%</span></span></li>
-                        <li class="css">CSS <span><span id="css">80</span><span>%</span></span></li>
-                        <li class="js">JavaScript <span><span id="js">60</span><span>%</span></span></li>
-                        <li class="python">Python <span><span id="py">60</span><span>%</span></span></li>
-                        <li class="sql">MySQL <span><span id="sql">50</span><span>%</span></span></li>
-                    </ul>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Contact Section design -->
-        <div class="bg-[#161216] py-2 mt-40">
-            <div class="px-3">
-                <div class="space-y-2 my-10">
-                    <p class="text-3xl text-gray-300 text-center">Contact With me!</p>
-                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[80%] mx-auto"/>
-                </div>
+            <!-- Portfolio section design -->
+            <div class="mt-40" id="portfolio">
                 <div>
-                    <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif">Let's work together!</p>
-                    <p class="text-xl text-gray-300">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
+                    <div class="space-y-2 my-10">
+                        <p class="text-3xl text-gray-300 text-center">My Portfolio</p>
+                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[55%] sm:w-[35%] md:w-[15%] mx-auto"/>
+                    </div>
+                    <p class="text-center text-2xl text-gray-400">Just click on image for visit that site</p>
+                </div>
+                <div class="mx-10">
+                    <div class="space-y-14 grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8">
+                        <div class="h-[50vh] mt-14 shadow transform hover:scale-105 duration-500 hover:shadow">
+                            <a href="https://cosmic-starship-ae9d0e.netlify.app/" target="_blank"><img src="Image/quize site.png" alt=""></a>
+                        </div>
+                        <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                            <a href="https://fantastic-creponne-61c4cf.netlify.app/" target="_blank"><img src="Image/tempareture.png" alt=""></a>
+                        </div>
+                        <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                            <a href="https://raihanchowdhury01.github.io/assainment-5/" target="_blank"><img src="Image/calculate.png" alt=""></a>
+                        </div>
+                        <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                            <a href="https://iridescent-valkyrie-ff4fc7.netlify.app/" target="_blank"><img src="Image/e-commerce.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill section design -->
+            <div class="mt-20" id="skill">
+                <div class="space-y-5 my-10">
+                    <p class="text-3xl text-gray-300 text-center">Skill levels</p>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[50%] md:w-[20%] mx-auto"/>
+                </div>
+                <div class="my-5 d-none d-sm-block space-y-5">
+                    <p class="text-3xl text-gray-300 text-center">Framework Skills</p>
+                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full sm:w-[40%] md:w-[15%] mx-auto"/>
                 </div>
                 <div class="">
-                    <form action="" class="">
-                        <div class="grid md:grid-cols-2 gap-5 mt-5 w-full">
-                            <input type="text" name="fname" placeholder="First name" class="input input-bordered w-full bg-black text-white" />
-                            <input type="text" name="lname" placeholder="Last name" class="input input-bordered w-full bg-black text-white" />
-                            <input type="email" name="email" placeholder="Enter your email" class="input input-bordered w-full bg-black text-white" />
-                            <input type="number" name="phone" placeholder="Phone number" class="input input-bordered w-full bg-black text-white"/>
-                        </div>
-                        <div class="mt-5 mx-auto">
-                            <select class="form-select form-control form-control-lg input input-bordered w-full bg-black text-white">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                        </div>
-                        <div class="mt-5">
-                            <textarea name="" id="" cols="60" rows="10" class="w-full bg-black text-white p-3" placeholder="Send me your message"></textarea>
-                        </div>
-                        <div class="">
-                            <input type="submit" value="Submit" class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl px-5 border-none mx-[25%] my-5">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- contact number section design -->
-        <div class="mt-5 px-3 space-y-10">
-            <div class=" flex items-center gap-3">
-                <i class="fa-solid fa-phone-volume  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
-                <div>
-                    <p class="text-gray-300 text-2xl">Phone</p>
-                    <p class="text-white">+8801965240019</p>
-                </div>
-            </div>
-            <div class=" flex items-center gap-3">
-                <i class="fa-solid fa-envelope  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
-                <div>
-                    <p class="text-gray-300 text-2xl">Message</p>
-                    <p class="text-white">raihan696@gmail.com</p>
-                </div>
-            </div>
-            <div class=" flex items-center gap-3">
-                <i class="fa-solid fa-location-dot  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
-                <div>
-                    <p class="text-gray-300 text-2xl">Address</p>
-                    <div class="text-white font-serif">
-                        <p>District:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joypurhat</p>
-                        <p>Division:&nbsp;&nbsp;&nbsp;Rajshahi</p>
-                        <p>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhaka</p>
-                        <p>Country:&nbsp;&nbsp;&nbsp;Bangladesh</p>
+                    <div class="w-[60%] mx-auto">
+                        <ul class="add text-white grid sm:grid-cols-2 items-center gap-5">
+                            <div class="space-y-8">
+                                <li class="html">HTML <span><span class="html5">90</span><span>%</span></span></li>
+                                <li class="css">CSS <span><span id="css">80</span><span>%</span></span></li>
+                                <li class="js">JavaScript <span><span id="js">60</span><span>%</span></span></li>
+                            </div>
+                            <div class="space-y-8">
+                                <div class="my-5 d-sm-none">
+                                    <p class="text-3xl text-gray-300 text-center">Framework Skills</p>
+                                    <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[80%] mx-auto"/>
+                                </div>
+                                <li class="tailwind">Tailwind <span><span id="tailwind">90</span><span>%</span></span></li>
+                                <li class="bootstrap">Bootstrap <span><span id="bootstrap">90</span><span>%</span></span></li>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+
+            <!-- Contact section design -->
+            <!-- Contact Section form design -->
+            <div class="bg-[#161216] py-2 mt-40" id="contact">
+                <div class="space-y-2 my-10">
+                    <p class="text-3xl text-gray-300 text-center">Contact With me!</p>
+                <hr class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-2 rounded-full w-[80%] sm:w-[40%] md:w-[20%] mx-auto"/>
+                </div>
+                <div class="md:flex justify-around items-center">
+                    <div class="px-3">
+                    
+                        <div class="text-center">
+                            <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif">Let's work together!</p>
+                            <p class="text-xl text-gray-300">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
+                        </div>
+                        <div class="mx-auto">
+                            <form action="" class="">
+                                <div class="grid md:grid-cols-2 gap-5 mt-5 w-full">
+                                    <input type="text" name="fname" placeholder="First name" class="input input-bordered w-full bg-black text-white" />
+                                    <input type="text" name="lname" placeholder="Last name" class="input input-bordered w-full bg-black text-white" />
+                                    <input type="email" name="email" placeholder="Enter your email" class="input input-bordered w-full bg-black text-white" />
+                                    <input type="number" name="phone" placeholder="Phone number" class="input input-bordered w-full bg-black text-white"/>
+                                </div>
+                                <div class="mt-5 mx-auto">
+                                    <select class="form-select form-control form-control-lg input input-bordered w-full bg-black text-white">
+                                        <option selected>Choose Your Service Type</option>
+                                        <option value="1">Web Design</option>
+                                        <option value="2">UI/UX design</option>
+                                        <option value="3">Landing page design</option>
+                                    </select>
+                                </div>
+                                <div class="mt-5">
+                                    <textarea name="" id="" cols="60" rows="10" class="w-full bg-black text-white p-3" placeholder="Send me your message"></textarea>
+                                </div>
+                                <div class="">
+                                    <input type="submit" value="Submit" class="btn btn-group bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl px-5 border-none mx-[25%] sm:ms-[40%] my-5">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- contact section privet contact medium design -->
+                    <div class="mt-5 px-3 space-y-10 sm:ms-[30%] md:ms-[0]">
+                        <div class=" flex items-center gap-3">
+                            <i class="fa-solid fa-phone-volume  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
+                            <div>
+                                <p class="text-gray-300 text-2xl">Phone</p>
+                                <p class="text-white">+8801965240019</p>
+                            </div>
+                        </div>
+                        <div class=" flex items-center gap-3">
+                            <i class="fa-solid fa-envelope  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
+                            <div>
+                                <p class="text-gray-300 text-2xl">Message</p>
+                                <p class="text-white">raihan696@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class=" flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot  bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-2xl border-none rounded-full p-2 text-2xl"></i> 
+                            <div>
+                                <p class="text-gray-300 text-2xl">Address</p>
+                                <div class="text-white font-serif">
+                                    <p>District:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joypurhat</p>
+                                    <p>Division:&nbsp;&nbsp;&nbsp;Rajshahi</p>
+                                    <p>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhaka</p>
+                                    <p>Country:&nbsp;&nbsp;&nbsp;Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
 
         <!-- footer section design -->
         <div class="mt-5 px-3">
-            <div class="space-y-5">
+            <div class="space-y-10">
                 <div>
                     <p class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent bg-center bg-cover font-serif text-center">Developer</p>
                 </div>
-                <div class="mt-3">
+                <div class="mt-3 md:w-[50%] mx-auto">
                     <ul class="text-white flex justify-around">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Skill</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#html5">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="text-center">
                     <footer class="text-purple-800">&copy; 2024 All rights reserved by <span class="text-purple-800 font-bold">Raihan</span></footer>
                 </div>
             </div>
-            
-        </div>
 
         <!-- bootstrap script cdn link -->
         <script

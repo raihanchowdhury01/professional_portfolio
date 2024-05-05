@@ -78,10 +78,10 @@ const css = document.getElementById("css");
 let cssCounter = 0;
 const js = document.getElementById("js");
 let jsCounter = 0;
-const py = document.getElementById("py");
-let pyCounter = 0;
-const sql = document.getElementById("sql");
-let sqlCounter = 0;
+const tailwind = document.getElementById("tailwind");
+let tailwindCounter = 0;
+const bootstrap = document.getElementById("bootstrap");
+let bootstrapCounter = 0;
 const observeSkill = new IntersectionObserver((items)=>{
 items.forEach(item =>{
     if(item.isIntersecting){
@@ -115,22 +115,22 @@ items.forEach(item =>{
         }, 20);
          // py
          setInterval(() => {
-            if (pyCounter === 60) {
+            if (tailwindCounter === 90) {
                 clearInterval();
             } else {
-                pyCounter++;
-                py.innerText = pyCounter;
+                tailwindCounter++;
+                tailwind.innerText = tailwindCounter;
             }
-        }, 50);
+        }, 20);
          // sql
          setInterval(() => {
-            if (sqlCounter === 50) {
+            if (bootstrapCounter === 90) {
                 clearInterval();
             } else {
-                sqlCounter++;
-                sql.innerText = sqlCounter;
+                bootstrapCounter++;
+                bootstrap.innerText = bootstrapCounter;
             }
-        }, 40);
+        }, 20);
     }else{
         skills.classList.remove("skill");
     }
